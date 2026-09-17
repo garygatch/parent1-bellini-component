@@ -1,0 +1,75 @@
+{
+  "type": "custom-component",
+  "name": "c1",
+  "children": [
+    {
+      "name": "h1",
+      "classList": [],
+      "children": [
+        {
+          "name": "text",
+          "textContent": "global sub",
+          "evaluate": false
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "nodeName": "bln-button",
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "classList": [],
+      "children": [],
+      "type": "core-component",
+      "expressions": [
+        {
+          "expression": "\"primary\"",
+          "to": "type"
+        },
+        {
+          "expression": "$ctrl.test",
+          "to": "label"
+        }
+      ]
+    },
+    {
+      "name": "h2",
+      "classList": [],
+      "children": [
+        {
+          "name": "text",
+          "textContent": "$ctrl.test",
+          "evaluate": true
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "test",
+      "description": "",
+      "type": "property",
+      "value": "'foo'"
+    }
+  ],
+  "bindings": [],
+  "modules": [],
+  "styles": [],
+  "directories": {
+    "assets": [
+      {
+        "id": "ixd2ZZ4Z9Uc1bDzLyLoph",
+        "name": "aa",
+        "parentDirectoryId": "Sask0kTG4rQWpMrHW8851"
+      }
+    ],
+    "components": [],
+    "scripts": [],
+    "stylesheets": []
+  },
+  "parentDirectoryId": "YuA7c5lR75gWt3RngGAbU"
+}

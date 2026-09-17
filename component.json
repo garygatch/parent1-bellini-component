@@ -1,0 +1,145 @@
+{
+  "type": "component",
+  "name": "parent1",
+  "children": [
+    {
+      "name": "div",
+      "classList": [],
+      "styles": [
+        {
+          "enabled": true,
+          "property": "height",
+          "value": "100% !important"
+        },
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100% !important"
+        }
+      ],
+      "layout": {
+        "container": {
+          "type": "box",
+          "orientation": "row",
+          "crossAxisAlignment": "stretch",
+          "items": []
+        }
+      },
+      "children": [
+        {
+          "name": "div",
+          "classList": [],
+          "layout": {
+            "cell": {
+              "type": "box-item",
+              "growFactor": 1,
+              "shrinkFactor": 1,
+              "mainSize": "100%"
+            }
+          },
+          "children": [
+            {
+              "name": "h1",
+              "classList": [],
+              "layout": {},
+              "children": [
+                {
+                  "name": "text",
+                  "textContent": "global parent",
+                  "evaluate": false
+                }
+              ]
+            },
+            {
+              "name": "Badge",
+              "nodeName": "bln-badge",
+              "attributes": [
+                {
+                  "property": "core",
+                  "value": ""
+                }
+              ],
+              "classList": [],
+              "layout": {},
+              "children": [],
+              "type": "core-component",
+              "expressions": [
+                {
+                  "expression": "$ctrl.test",
+                  "to": "text"
+                }
+              ]
+            },
+            {
+              "name": "h2",
+              "classList": [],
+              "children": [
+                {
+                  "name": "text",
+                  "textContent": "$ctrl.test",
+                  "evaluate": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "div",
+          "classList": [],
+          "layout": {
+            "cell": {
+              "type": "box-item",
+              "growFactor": 1,
+              "shrinkFactor": 1,
+              "mainSize": "100%"
+            }
+          },
+          "children": [
+            {
+              "name": "c1",
+              "nodeName": "c1",
+              "classList": [],
+              "children": [],
+              "type": "custom-component",
+              "ownerId": "6aa10496ce0569516d29dc92",
+              "ownerType": "component",
+              "expressions": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "test",
+      "description": "",
+      "type": "property",
+      "value": "'foo'"
+    }
+  ],
+  "bindings": [],
+  "modules": [],
+  "styles": [],
+  "directories": {
+    "assets": [
+      {
+        "id": "q4MWSmdTZu3YOEGw0m5ji",
+        "name": "dir"
+      },
+      {
+        "id": "SyV6eXkqq1V0P1H937YHO",
+        "name": "aa",
+        "parentDirectoryId": "q4MWSmdTZu3YOEGw0m5ji"
+      }
+    ],
+    "components": [
+      {
+        "id": "YuA7c5lR75gWt3RngGAbU",
+        "name": "dir"
+      }
+    ],
+    "scripts": [],
+    "stylesheets": []
+  }
+}
